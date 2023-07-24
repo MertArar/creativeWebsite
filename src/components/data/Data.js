@@ -1,26 +1,33 @@
-export const nav = [
+export const navLinksdata = [
   {
-    text: "home",
-    path: "/",
+    _id: 1001,
+    title: "Anasayfa",
+    link: "home",
   },
   {
-    text: "about",
-    path: "/about",
+    _id: 1002,
+    title: "Hakkında",
+    link: "features",
   },
   {
-    text: "solutions",
-    path: "/solutions",
+    _id: 1003,
+    title: "Dijital Çözümler",
+    link: "projects",
   },
   {
-    text: "process",
-    path: "/process",
+    _id: 1004,
+    title: "Süreçler",
+    link: "resume",
+  },
+
+  {
+    _id: 1006,
+    title: "Takım",
+    link: "contact",
   },
   {
-    text: "team",
-    path: "/team",
-  },
-  {
-    text: "contact",
-    path: "/contact",
+    _id: 1007,
+    title: "İletişim",
+    link: "iletişim",
   },
 ];

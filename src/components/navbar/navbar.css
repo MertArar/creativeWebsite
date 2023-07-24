@@ -1,132 +1,87 @@
 .header {
   position: fixed;
+  height: 90px;
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 1;
+  transition: 0.3 ease-in;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.9);
 }
-.header.active {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-}
-.Nav_container {
-  position: relative;
-  max-width: 1224px;
+
+.header .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem 2rem;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1240px;
+  margin: auto;
+  height: 100%;
+  padding: 0 1rem;
 }
-.logo {
-  background: #fff;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+
+.navbar .nav-menu a {
+  color: white;
+  list-style-type: none;
+}
+
+.header .navbar img {
+  width: 100%;
+  height: auto;
+}
+
+.header .nav-menu {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
 }
-.social_icons {
-  display: flex;
+
+.header .nav-item {
+  padding: 1rem;
+  font-weight: 300;
 }
-.social_icons div {
-  margin-left: 1rem;
+
+.header .nav-item a:hover {
+  padding-bottom: 5px;
+  border-bottom: 3px solid var(--red-color);
+  transition: all ease 0.3s;
 }
-.social_icons div svg {
-  cursor: pointer;
-  color: #fff;
-  opacity: 0.6;
-  transition: 0.3s;
-  z-index: 5;
-}
-.social_icons div svg:hover {
-  opacity: 1;
-}
-.menu {
-  background: #fff;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  position: relative;
+
+.hamburger {
   display: none;
   cursor: pointer;
 }
-@media screen and (max-width: 800px) {
-  .menu {
+
+@media screen and (max-width: 940px) {
+  .header {
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .header .navbar {
+    max-width: 100%;
+  }
+  .hamburger {
     display: block;
   }
-}
-.menu svg {
-  width: 70%;
-  height: 70%;
-}
-.closeMenu {
-  background: #000;
-  width: 4rem;
-  height: 4rem;
-  position: fixed;
-  right: 0;
-  top: 0;
-  border-radius: 50%;
-}
-.menuX {
-  color: #fff;
-  position: fixed;
-  top: 2rem;
-  left: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 100vh;
-}
-.menuX svg {
-  cursor: pointer;
-  width: 1.5rem;
-  height: 1.5rem;
-  position: absolute;
-  top: 2rem;
-  right: 5rem;
-}
-.menuX li {
-  list-style: none;
-  margin-top: 1rem;
-}
-.menuX li a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 1.5rem;
-  opacity: 0.6;
-  transition: all 0.3s ease;
-}
-.menuX li a:hover {
-  opacity: 1;
-}
-.nav_links {
-  display: flex;
-  list-style: none;
-}
-.nav_links li {
-  margin-left: 3rem;
-}
-@media screen and (max-width: 800px) {
-  .nav_links li {
-    display: none;
+  .nav-menu {
+    position: fixed;
+    left: 100%;
+    top: 90px;
+    flex-direction: column;
+    opacity: 0.7;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 90vh;
+    z-index: 999;
+    text-align: center;
+    transition: 0.3s;
   }
-}
-.nav_links li a {
-  text-decoration: none;
-  transition: 0.3s;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 0.85rem;
-  opacity: 0.6;
-}
-.nav_links li a:hover {
-  opacity: 1;
+
+  .nav-menu.active {
+    left: 0;
+  }
+  .nav-item {
+    margin: 1rem 0;
+  }
+  .header .navbar img {
+    width: 100px;
+  }
 }

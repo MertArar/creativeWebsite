@@ -1,94 +1,40 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import logo from "../../../public/images/logo.svg";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { navLinksdata } from "../data/Data";
+
 import "./navbar.css";
-import { animate, motion } from "framer-motion";
-import { HiMenuAlt4, HiX } from "react-icons/hi";
-import { navLinks } from "../../Data";
+
 const Navbar = () => {
-  const [scroll, setScroll] = useState(false);
-  const [toggle, setToggle] = useState(false);
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
 
-  const menuVariants = {
-    hidden: {
-      scale: 0,
-    },
-    visible: {
-      scale: 50,
-      transition: {
-        type: "tween",
-        duration: 0.5,
-      },
-    },
-  };
-  const navLinkVariants = {
-    hidden: {
-      display: "none",
-      opacity: 0,
-    },
-    visible: {
-      opacity: 1,
-      y: -30,
-      transition: {
-        delay: 0.7,
-      },
-    },
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setScroll(window.scrollY > 20);
-    });
-  }, []);
+  const closeMenu = () => setClick(false);
   return (
-    <motion.div
-      initial={{ y: -25 }}
-      animate={{ y: -5 }}
-      transition={{ duration: 0.5 }}
-      className={scroll ? "header active" : "header"}
-    >
-      <div className="Nav_container">
-        <div className="logo">
-          <h3>A</h3>
+    <div className="header">
+      <nav className="navbar">
+        <a href="/" className="logo">
+          <img src={logo} />
+        </a>
+        <div className="hamburger" onClick={handleClick}>
+          {click ? (
+            <FaTimes size={30} style={{ color: "#ffffff" }} />
+          ) : (
+            <FaBars size={30} style={{ color: "#ffffff" }} />
+          )}
         </div>
-        <ul className="nav_links">
-          {navLinks.map((navlink, index) => {
-            return (
-              <li key={index}>
-                <a href={`#${navlink}`}>{navlink}</a>
-              </li>
-            );
-          })}
+        <ul className={click ? "nav-menu active" : "nav-menu"}>
+          {navLinksdata.map(({ _id, title, link }) => (
+            <li className="nav-item" key={_id}>
+              <Link activeClass="active" to={link} onClick={closeMenu}>
+                {title}
+              </Link>
+            </li>
+          ))}
         </ul>
-        <div className="menu">
-          <HiMenuAlt4
-            onClick={() => {
-              setToggle(true);
-            }}
-          />
-        </div>
-        <motion.div
-          className="closeMenu"
-          variants={menuVariants}
-          initial="hidden"
-          animate={toggle ? "visible" : "hidden"}
-        ></motion.div>
-
-        <motion.div
-          variants={navLinkVariants}
-          animate={toggle ? "visible" : "hidden"}
-          className="menuX"
-        >
-          <HiX onClick={() => setToggle(false)} />
-          {navLinks.map((navlink, index) => {
-            return (
-              <li key={index}>
-                <a href={`#${navlink}`} onClick={() => setToggle(false)}>
-                  {navlink}
-                </a>
-              </li>
-            );
-          })}
-        </motion.div>
-      </div>
-    </motion.div>
+      </nav>
+    </div>
   );
 };
 
