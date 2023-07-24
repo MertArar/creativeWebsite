@@ -1,0 +1,93 @@
+.hero-video-container {
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+  height: 650px;
+  background-color: black;
+}
+
+.hero-video {
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.4;
+}
+
+.hero-video-container video {
+  object-fit: cover;
+}
+
+.hero-text {
+  margin-top: 110px;
+  position: absolute;
+  color: white;
+  top: 10em;
+  text-align: center;
+  align-self: center;
+}
+
+.hero-text h1 {
+  font-size: 3.5em;
+  align-self: center;
+}
+.hero-text h2 {
+  margin-top: 40px;
+  font-size: 18px;
+  opacity: 0.8;
+  font-weight: normal;
+}
+.contact-btn span {
+  display: inline-block;
+  position: relative;
+  margin: 5rem auto;
+}
+.contact-btn span::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  margin-bottom: -5px;
+  background-color: var(--red-color);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  cursor: pointer;
+}
+.contact-btn:hover {
+  color: var(--red-color);
+  transition: all ease-in-out 0.6s;
+  cursor: pointer;
+}
+.contact-btn:hover span::before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  color: var(--red-color);
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .hero-video-container {
+    height: 810px;
+  }
+  .hero-text h1 {
+    font-size: 6em;
+    align-self: center;
+  }
+  .hero-text h2 {
+    margin-top: 40px;
+    font-size: 18px;
+    opacity: 0.8;
+  }
+}

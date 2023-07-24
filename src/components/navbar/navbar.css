@@ -7,7 +7,7 @@
   z-index: 1;
   transition: 0.3 ease-in;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: transparent;
 }
 
 .header .navbar {
@@ -21,7 +21,7 @@
 }
 
 .navbar .nav-menu a {
-  color: white;
+  color: var(--light-grey);
   list-style-type: none;
 }
 
