@@ -23,6 +23,7 @@
 .navbar .nav-menu a {
   color: var(--light-grey);
   list-style-type: none;
+  font-size: 18px;
 }
 
 .header .navbar img {

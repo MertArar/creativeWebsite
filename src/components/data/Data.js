@@ -2,12 +2,12 @@ export const navLinksdata = [
   {
     _id: 1001,
     title: "Anasayfa",
-    link: "home",
+    link: "/",
   },
   {
     _id: 1002,
     title: "Hakkında",
-    link: "features",
+    link: "about",
   },
   {
     _id: 1003,

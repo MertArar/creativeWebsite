@@ -11,7 +11,7 @@ const HeroVideo = () => {
     <div className="hero-video-container">
       <div className="hero-video">
         <ReactPlayer
-          url="https://artlist.io/stock-footage/clip/ring-wobble-loop-shaking/undefined"
+          url="https://res.cloudinary.com/darwtgzlk/video/upload/v1687841755/Ecommerce-app/video-3_bvxghi.mp4"
           playing
           playbackRate={1.5}
           muted
