@@ -12,8 +12,10 @@
   "dependencies": {
     "framer-motion": "^10.13.0",
     "react": "^18.2.0",
+    "react-countup": "^6.4.2",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
+    "react-intersection-observer": "^9.5.2",
     "react-player": "^2.12.0",
     "react-router-dom": "^6.14.2"
   },

@@ -7,6 +7,7 @@ const Home = () => {
   return (
     <div>
       <HeroVideo />
+      <Statistic />
       <About />
     </div>
   );
