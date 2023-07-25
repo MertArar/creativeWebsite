@@ -1,0 +1,26 @@
+.wrapper {
+  position: relative;
+  margin-top: -50px;
+  height: 50px;
+  margin-right: 100px;
+  margin-left: 100px;
+  border-radius: inherit;
+}
+
+.content {
+  background-image: url("../../../assets/stats.jpeg");
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  color: white;
+  max-width: auto;
+}
