@@ -4,8 +4,10 @@
   --grey-color: #2e2d2d;
   --white-color: #fcfcfc;
   --red-color: #870606;
+  --light-red: #de1212;
   --black-color: #000000;
   --light-grey: #d7d5d5;
+  --lighter-grey: #9aa0a5;
 }
 
 * {
@@ -15,7 +17,7 @@
   font-family: "Roboto", sans-serif;
 }
 body {
-  background-color: var(--grey-color);
+  background-color: var(--black-color);
 }
 
 ul {

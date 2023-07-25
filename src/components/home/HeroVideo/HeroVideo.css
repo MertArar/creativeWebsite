@@ -8,7 +8,7 @@
   flex-flow: column nowrap;
   position: relative;
   height: 650px;
-  background-color: blue;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .hero-video {

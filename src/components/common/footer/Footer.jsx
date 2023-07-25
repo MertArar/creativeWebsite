@@ -15,7 +15,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer>
-      <div className="container">
+      <div className="container-footer">
         <div className="content-footer">
           <div className="profile">
             <div className="logo-area">
@@ -23,8 +23,8 @@ const Footer = () => {
             </div>
             <div className="desc-area">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem
-                cumque fugit dolorum.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Praesentium totam fuga non neque reprehenderit.
               </p>
             </div>
             <div className="social-media">
@@ -46,46 +46,46 @@ const Footer = () => {
             <ul className="service-header">
               <li className="service-name">Services</li>
               <li>
-                <a href="#">IT Consulting</a>
+                <a href="#">Digital Marketing</a>
               </li>
               <li>
-                <a href="#">Development</a>
+                <a href="#">UI / UX Design</a>
               </li>
               <li>
-                <a href="#">Cloud</a>
+                <a href="#">Technology</a>
               </li>
               <li>
-                <a href="#">Devops & Support</a>
+                <a href="#">React.js Development</a>
               </li>
             </ul>
             <ul className="service-header">
               <li className="service-name">Industry</li>
               <li>
-                <a href="#">Finance</a>
+                <a href="#">Başlık 5</a>
               </li>
               <li>
-                <a href="#">Public Sector</a>
+                <a href="#">Başlık 6</a>
               </li>
               <li>
-                <a href="#">Smart Office</a>
+                <a href="#">Başlık 7</a>
               </li>
               <li>
-                <a href="#">Retail</a>
+                <a href="#">Başlık 8</a>
               </li>
             </ul>
             <ul className="service-header">
               <li className="service-name">Compnany</li>
               <li>
-                <a href="#">About Us</a>
+                <a href="#">Hakkında</a>
               </li>
               <li>
-                <a href="#">Blog</a>
+                <a href="#">Dijital Çözümler</a>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <a href="#">Süreçler</a>
               </li>
               <li>
-                <a href="#">Join us</a>
+                <a href="#">Takım</a>
               </li>
             </ul>
           </div>
@@ -93,7 +93,13 @@ const Footer = () => {
         <hr />
         <div className="footer-bottom">
           <div className="copy-right">
-            <a href=""></a>
+            <span>Copyright</span>
+            <AiOutlineCopyrightCircle />
+            <span>2023 Arino</span>
+          </div>
+          <div className="tou">
+            <a href="#">Term of Use</a>
+            <a href="#">Privacy & Policy</a>
           </div>
         </div>
       </div>
