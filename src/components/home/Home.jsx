@@ -1,16 +1,14 @@
 import React from "react";
 import HeroVideo from "./heroVideo/heroVideo";
 import Statistic from "./Statistic/Statistic";
-import ImageSlider from "./Slider/ImageSlider";
-import Stats from "./Stats/Stats";
-import About from "../about/About";
+import SliderImg from "./SliderImg/SliderImg";
 
 const Home = () => {
   return (
     <div>
       <HeroVideo />
       <Statistic />
-      <ImageSlider />
+      <SliderImg />
     </div>
   );
 };

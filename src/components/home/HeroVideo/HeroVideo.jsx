@@ -38,7 +38,6 @@ const HeroVideo = () => {
             />
           </svg>
         </a>
-        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
       </div>
     </div>
   );
