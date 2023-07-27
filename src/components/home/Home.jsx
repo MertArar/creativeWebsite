@@ -14,6 +14,7 @@ const Home = () => {
       <Services />
       <SliderSlick />
       <Partners />
+      <ImageSlider />
       <ContactBanner />
     </div>
   );
