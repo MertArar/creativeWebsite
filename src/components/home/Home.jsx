@@ -5,6 +5,7 @@ import Services from "./Services/Services";
 import Partners from "./Partners/Partners";
 import ContactBanner from "./ContactBanner/ContactBanner";
 import SliderSlick from "./SliderSlick/SliderSlick";
+import Testimonials from "./Testimonials/Testimonials";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Statistic />
       <Services />
       <SliderSlick />
+      <Testimonials />
       <Partners />
       <ContactBanner />
     </div>
