@@ -4,8 +4,8 @@ import Statistic from "./Statistic/Statistic";
 import Services from "./Services/Services";
 import Partners from "./Partners/Partners";
 import ContactBanner from "./ContactBanner/ContactBanner";
+import Testimons from "./Testimons/Testimons";
 import SliderSlick from "./SliderSlick/SliderSlick";
-import Testimonials from "./Testimonials/Testimonials";
 
 const Home = () => {
   return (
@@ -14,7 +14,7 @@ const Home = () => {
       <Statistic />
       <Services />
       <SliderSlick />
-      <Testimonials />
+      <Testimons />
       <Partners />
       <ContactBanner />
     </div>
