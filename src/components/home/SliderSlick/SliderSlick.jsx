@@ -69,7 +69,8 @@ const SliderSlick = () => {
 
   return (
     <div className="slick-container">
-      <h2 className="header">Modern React Carousel</h2>
+      <h2 className="slick-header">Latest Project</h2>
+      <h1 className="slick-subtitle">Portfolio to Explore</h1>
       <div className="slider">
         <Slider {...settings}>
           {images.map((img, index) => (
