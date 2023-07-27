@@ -8,11 +8,24 @@ import "./navbar.css";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
+  const [header, setHeader] = useState(false);
+
   const handleClick = () => setClick(!click);
 
   const closeMenu = () => setClick(false);
+
+  const changeBackground = () => {
+    if (window.scrollY >= 80) {
+      setHeader(true);
+    } else {
+      setHeader(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeBackground);
+
   return (
-    <div className="header">
+    <div className={header ? "header active" : "header"}>
       <nav className="navbar">
         <a href="/" className="logo">
           <img src={logo} />

@@ -10,6 +10,10 @@
   background-color: transparent;
 }
 
+.header.active {
+  background: black;
+}
+
 .header .navbar {
   display: flex;
   justify-content: space-between;
