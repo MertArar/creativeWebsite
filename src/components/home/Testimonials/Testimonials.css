@@ -1,0 +1,84 @@
+.testo {
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6rem 0 2rem;
+}
+
+.testimonial__container {
+  width: 750px;
+}
+
+.section__title {
+  font-size: 2.25rem;
+  color: white;
+  text-align: center;
+}
+
+.section__subtitle {
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  display: block;
+  margin-bottom: 4rem;
+}
+
+.testimonial__card {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 2rem;
+  border-radius: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.testimonial__img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 3rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial__name {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  color: var(--grey-color);
+}
+
+.testimonial__description {
+  font-size: 0.813rem;
+  color: #ccc;
+}
+
+/* swipper class */
+.swiper-pagination-bullet {
+  background-color: red !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: red !important;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+  .testimonial__container {
+    width: initial;
+  }
+
+  .testimonial__card {
+    padding: 1.25rem 1.5rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+}
