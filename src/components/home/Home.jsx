@@ -5,6 +5,7 @@ import Services from "./Services/Services";
 import Partners from "./Partners/Partners";
 import ContactBanner from "./ContactBanner/ContactBanner";
 import SliderSlick from "./SliderSlick/SliderSlick";
+import Testimonials from "./Testimonials/Testimonials";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Services />
       <SliderSlick />
       <Partners />
+      <Testimonials />
       <ContactBanner />
     </div>
   );
